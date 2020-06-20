@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> simplest calcultor </title>
+</head>
+<body>
+	<form name="calc">
+		1st:<input type="text" name="fst" id="op1"><br><br>
+		2nd:<input type="text" name="snd" id="op2"><br><br>
+		<input type="button" value="+" onClick="javascript:add()">
+		<input type="button" value="-" onClick="javascript:sub()">
+		<input type="button" value="*" onClick="javascript:mul()">
+		<input type="button" value="/" onClick="javascript:div()"><br><br>
+		result:<input type="text" name="result" readonly placeholder="result">
+		<input type="button" value="clear" onclick="javascript:c()">
+	</form>
+<script>
+	function add(){
+		fst=parseInt(calc.fst.value);
+		snd=parseInt(calc.snd.value);
+		res=fst+snd;
+		calc.result.value=res;
+		calc.fst.value=res;
+		calc.snd.value=0;
+		}
+		function sub(){
+		fst=parseInt(calc.fst.value);
+		snd=parseInt(calc.snd.value);
+		res=fst-snd;
+		calc.result.value=res;
+		calc.fst.value=res;
+		calc.snd.value=0;
+		}
+		function mul(){
+		fst=parseInt(calc.fst.value);
+		snd=parseInt(calc.snd.value);
+		res=fst*snd;
+		calc.result.value=res;
+		calc.fst.value=res;
+		calc.snd.value=0;
+		}
+		function div(){
+		fst=parseInt(calc.fst.value);
+		snd=parseInt(calc.snd.value);
+		res=fst/snd;
+		calc.result.value=res;
+		calc.fst.value=res;
+		calc.snd.value=0;
+		}
+		function c()
+		{
+			
+		}
+</script>
+</body>
+</html>
