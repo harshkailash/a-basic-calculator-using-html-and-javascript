@@ -1,2 +1,6 @@
 today is a good day
+
 for A
+
+for B
+
